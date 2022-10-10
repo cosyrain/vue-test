@@ -27,9 +27,22 @@
     },
     components:{
       MyLogo
+    },
+    mounted(){
+      let chiffreScript = document.createElement('script');
+      chiffreScript.setAttribute('src', 'https://chiffre.io/analytics.js');
+      chiffreScript.setAttribute('id','chiffre:analytics');
+      chiffreScript.setAttribute('data-chiffre-project-id','DFrQLKns9qGhy691');
+      chiffreScript.setAttribute('data-chiffre-public-key','pk.PoQ988Ii4TpFoJUzYyW5ZTDzwg_2obvGGTumwGTOj0E');
+      chiffreScript.setAttribute('referrerpolicy','origin');
+      chiffreScript.setAttribute('crossorigin','anonymous');
+      chiffreScript.setAttribute('async','async');
+      document.body.appendChild(chiffreScript);
     }
   }
 </script>
+
+
 
 <style>
 #app {
